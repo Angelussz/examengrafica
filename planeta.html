@@ -11,6 +11,7 @@
         import * as THREE from 'https://cdn.skypack.dev/three';
                
         var sol = new THREE.Mesh( new THREE.BoxGeometry( 5, 5, 5 ), new THREE.MeshPhongMaterial( {color:0xFCFF33}) );
+        sol.position.x=20;
         var tierra = new THREE.Mesh( new THREE.BoxGeometry( 4, 4, 4 ), new THREE.MeshPhongMaterial( {color:0x8E5229}) );
         var luna = new THREE.Mesh( new THREE.BoxGeometry( 2, 2, 2 ), new THREE.MeshPhongMaterial( {color:0x51CEDF}) );
         tierra.position.x = 20
@@ -41,9 +42,9 @@
                    0, 0, 0, 1 ) 
 // ---------------------------------------------------------------
         const traslation = new THREE.Matrix4();
-        traslation.set(1, 0, 0, -1.2,
+        traslation.set(1, 0, 0, -0.9,
                        0, 1, 0, 0,
-                       0, 0, 1, -1.2,
+                       0, 0, 1, 0,
                        0, 0, 0, 1 ); 
 
         var camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight,1,500);
